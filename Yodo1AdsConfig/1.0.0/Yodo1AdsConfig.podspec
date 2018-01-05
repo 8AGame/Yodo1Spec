@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = tags + '/*.h'
+    #s.source_files = tags + '/*.h'
 
-    s.public_header_files = tags + '/*.h'
+    #s.public_header_files = tags + '/*.h'
 
     s.preserve_path = 'ChangeLog.txt'
     
