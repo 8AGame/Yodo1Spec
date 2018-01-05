@@ -70,6 +70,14 @@ Pod::Spec.new do |s|
         ss.dependency 'Yodo1UCenter','2.0.1'
         ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
     end
+    
+    s.subspec 'Yodo1_Analytics' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ANALYTICS'
+        }
+        ss.dependency 'Yodo1Analytics','2.0.1'
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
     s.subspec 'Yodo1_ThirdsAnalytics' do |ss|
         ss.xcconfig = {
